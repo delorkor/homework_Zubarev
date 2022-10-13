@@ -388,13 +388,11 @@ font-size:30px;
     .footer .container .footer_box{
       width: 100%;
       height: 251px;
-    
       display:flex;
       justify-content:space-between;
      
 
     }
-
     
     .footer .location,.social, .about  {
       width: 370px;
@@ -428,7 +426,23 @@ font-weight: 400;
       justify-content: space-between;
     }
 
+    .footer .copyright  {
+    height: 90px;
+    width: 100%;
+    background-color: #2C3154;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 400;
+    color: #808080;
+    }
 
-
-
-    
+    .footer .copyright p  {
+      margin: 0 auto;
+      height: 42px;
+      width: 370px;
+      padding-top: 24px;
+      }
+      .footer .copyright p span  {
+      color: #FFFFFF;
+        }
+      
