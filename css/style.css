@@ -391,6 +391,7 @@ font-size:30px;
     
       display:flex;
       justify-content:space-between;
+     
 
     }
 
@@ -398,11 +399,36 @@ font-size:30px;
     .footer .location,.social, .about  {
       width: 370px;
       height: 113px;
-    
+      margin-top: 71px;
+      color: #ffff;
    
     }
 
-   
-  
+    .footer .location h3,.social h3, .about h3  {
+    margin-bottom: 29px;
+   text-align: center;
+   font-family: "Raleway";
+font-size: 18px;
+font-weight: 700;
+text-transform: uppercase;
+    }
+    .footer .social h3   {
+      margin-bottom: 29px;
+     text-align: center;
+      }
+    .footer .location  p, .about  p  {
+      text-align: center;
+font-family: "Raleway";
+font-size: 18px;
+font-weight: 400;
+    }
+    .footer .social .icon  {
+      margin: 49px 99px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+
 
     
