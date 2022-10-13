@@ -182,7 +182,7 @@ margin: 0 auto;
    width: 100%;
    height: 100%;
    border-color: #FF4343;
-   opacity: 0.5;
+   opacity: 0;
    display: block;
    }
    .work .work_box1:hover::after{
@@ -194,24 +194,30 @@ margin: 0 auto;
    
     background-image: url(../img/work_2.png);
    }
+
    .work .work_box3{
     margin-top: 2px;
     width: 100%;
     height: 99.5%;
     background-image: url(../img/work_3.png);
    }
+ 
    .work .work_box4{
    
     background-image: url(../img/work_4.png);
    }
+
    .work .work_box5{
    
     background-image: url(../img/work_5.png);
    }
+ 
+   
    .work .work_box6{
     
     background-image: url(../img/work_6.png);
    }
+
    .work .work_box7{
    
     background-image: url(../img/work_7.png);
@@ -356,14 +362,24 @@ text-transform: uppercase;
   width: 100%;
   height: 452px;
 }
-.testimonials #carouselExampleIndicators .carousel-indicators{
-
-margin-top: 31px;
+.carousel-indicators {
+bottom: -60px;
+ 
+  }
+  .carousel-indicators .but_style {
+    margin: 0 25px;
+background-color: #FFFFFF;
+width: 14px;
+height: 14px;
+border-radius: 14px;
+border: 1px solid #7E5D6F;
+}
+.carousel-indicators .active {
+ background-color: #5C3249;
 }
 
-
 .testimonials h2{
-margin-top: 114px;
+margin-top: 159px;
 font-family: "Raleway";
 font-weight: 500;
 font-size:30px;
