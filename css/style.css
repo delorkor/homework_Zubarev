@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 .main{
+  box-sizing: border-box;
     max-width: 1510px;
     margin: 0 auto;
+    font-family:"Raleway";
 }
 .container{
   width: 1170px;
@@ -16,9 +17,12 @@
 }
 .section_img{
     background-image:url("../img/bg.png");
-   width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ 
     min-height: 747px;
-    
+    color: #FFFFFF;
 }
 .header{
 height: 100px;
@@ -34,21 +38,19 @@ height: 100px;
       }
 
 .list{
-
-    font-family:"Raleway";
     display: flex;
-    justify-content: space-between;
     align-items: center;
     max-width: 670px;
     height: 63px;
     /* font-size: 13px; */
     font-weight: 700;
-    color: #FFFFFF;
     font-size: 13px;
     text-transform: uppercase;
+    align-items: center;
 }
 
 .list li{
+ padding: 0;
     margin-top: 55px;
     text-align: center;
     padding-bottom: 30px;
@@ -56,13 +58,12 @@ height: 100px;
     height: 100%;
     list-style-type:none;
     text-decoration: none;
-    color: #FFFFFF;
 }
 .list li a{
 text-decoration: none;
 color: #FFFFFF;
 }
-.list  li:first-child{
+.list li:hover{
   border-bottom: 4px solid #BABBC5;
 
 }
@@ -70,45 +71,40 @@ color: #FFFFFF;
 .banner{
     margin: 0 auto;
     text-align: center;
-    color: #FFFFFF;
 }
 .banner h1{
- font-family: "Raleway";
  font-weight: 900;
  font-size: 64px;
  margin-top: 130px;
  text-transform: uppercase ;
 }
-.banner h2{
-  
-    font-family: "Raleway";
+.banner p{
     font-weight: 400;
     font-size: 24px;
     margin-top: 31px;
     text-align: center;
-    color: #FFFFFF;
+    line-height: 28px;
+    
    }
 
 .banner_but{
-font-family: "Raleway";
  font-weight: 900;
  font-size: 24px;
  display: block;
 margin: 0 auto;
-width: 370px;
-height: 80px;
+width: 369px;
+height: 78px;
 background-color: #FF4343;
 margin-top: 80px;
-color: #FFFFFF;
 border: 1px solid #FF4343 ;
-
+line-height: 28px;
+color: #FFFFFF;
    }
+
+
    
-
-
-
+   
 .features{
-  
 max-width: 100%;
 min-height: 949px;
 padding:116px 170px;
@@ -120,7 +116,7 @@ display: flex;
 
 .features_box{
  width: 370px;
- height: 305px;
+ min-height: 305px;
  /* display: inline-block; */
 
 }
@@ -135,7 +131,6 @@ margin: 0 auto;
 }
 
 .features_box h3{
-    font-family: "Raleway";
     font-weight: 900;
     font-size: 24px;
     text-align: center;
@@ -144,22 +139,19 @@ margin: 0 auto;
    
    }
    .features_box p{
-    font-family: "Raleway";
     font-weight: 400;
     font-size: 18px;
     text-align: center;
     margin-top: 21px;
- 
     color: #6C7279;
    
    }
 
    .work {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 1px;
- grid-column-gap: 1px;
    }
 
  .work .work_box{
@@ -214,18 +206,15 @@ margin: 0 auto;
 
 .our_team .person_card h3{
    
-    font-family: "Raleway";
     font-weight: 700;
     font-size:24px;
     margin-top: 30px;
     color: #2D3033; 
 
-
  }
    
  .our_team .person_card h3{
    
-    font-family: "Raleway";
     font-weight: 700;
     font-size:24px;
     margin-top: 30px;
@@ -236,7 +225,6 @@ margin: 0 auto;
      
  .our_team .person_card span{
    
-    font-family: "Raleway";
     font-weight: 400;
     font-size:18px;
     margin-top: 5px;
@@ -246,7 +234,6 @@ text-transform: uppercase;
  }
  .our_team .person_card p{
    
-    font-family: "Raleway";
     font-weight: 400;
     font-size:18px;
     margin-top: 18px;
@@ -310,7 +297,6 @@ margin: 116px 0 0 129px ;
 
    .carousel-item_color .carousel_text p{
    margin-left: 129px;
-    font-family: "Raleway";
    font-weight: 700;
   font-size:13px;
   color: #FFFFFF;
@@ -318,7 +304,6 @@ text-transform: uppercase;
      }
   
 .testimonials{
-
   width: 100%;
   height: 452px;
 }
@@ -340,14 +325,12 @@ border: 1px solid #7E5D6F;
 
 .testimonials h2{
 margin-top: 159px;
-font-family: "Raleway";
 font-weight: 500;
 font-size:30px;
   text-align: center;
 }
 .testimonials p{
   margin-top: 5px;
-  font-family: "Raleway";
   font-weight: 700;
   font-size:18px;
     text-align: center;
@@ -355,7 +338,6 @@ font-size:30px;
 
   .testimonials .banner_but{
     margin-top: 50px;
-    font-family: "Raleway";
     font-weight: 700;
     font-size:18px;
       text-align: center;
@@ -385,7 +367,6 @@ font-size:30px;
     .footer .location h3,.social h3, .about h3  {
     
     text-align: center;
-    font-family: "Raleway";
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -394,7 +375,6 @@ font-size:30px;
 
     .footer .location  p, .about  p  {
       text-align: center;
-     font-family: "Raleway";
      font-size: 18px;
      margin-top:18px ;
      font-weight: 400;
@@ -410,7 +390,6 @@ font-size:30px;
     height: 90px;
     width: 100%;
     background-color: #2C3154;
-    font-family: "Raleway";
     font-size: 18px;
     font-weight: 400;
     color: #808080;
@@ -426,3 +405,43 @@ font-size:30px;
       color: #FFFFFF;
         }
      
+     @media screen and (max-width:1024px) and (min-width:321px)  {
+
+      .list{
+       min-width: 566px;
+       }
+        
+    .header .navi  {
+            max-width: 984px;
+              }
+          .list li{
+               width: 112px;
+               height: 100%;
+           }
+           .banner h1{
+            margin-top: 157px;
+            font-size: 48px;
+           }
+           .banner p{
+            font-size: 18px;
+            margin-top: 62px;
+            
+           }
+           .banner_but{
+            margin-top: 89px;
+             width: 314px;
+           }
+           .features{  
+            padding:19px 20px;
+            padding-bottom: 133px;
+      
+            }
+           .features_box{
+            width: 314px;
+            min-height: 257px;
+            margin-top: 59px;
+           
+           }
+           
+            
+          }
