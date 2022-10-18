@@ -19,8 +19,7 @@
     background-image:url("../img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
- 
+    background-position: center center; 
     min-height: 747px;
     color: #FFFFFF;
 }
@@ -440,8 +439,17 @@ font-size:30px;
             width: 314px;
             min-height: 257px;
             margin-top: 59px;
-           
+            
            }
            
+           .features_box h3{
+            font-size: 18px;
+            margin-top: 34px;
+           }
+           .features_box p{
+            font-size: 14px;
+            margin-top: 4px;
+           }
             
+
           }
