@@ -10,8 +10,7 @@
     font-family:"Raleway";
 }
 .container{
-  width: 1170px;
-  height: 100%;
+  max-width: 1170px;
   display: block;
   margin: 0 auto;
 }
@@ -20,7 +19,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
-    min-height: 747px;
+    /* min-height: 747px; */
+    padding-bottom: 120px;
     color: #FFFFFF;
 }
 .header{
@@ -179,11 +179,10 @@ margin: 0 auto;
   
 .our_team{
     width: 100%;
-    min-height: 847px;
     display: flex;
    justify-content:space-between;
    flex-wrap: wrap;
-   padding: 0 170px 0 170px;
+   padding: 0 170px 78px 170px;
    
 
 }
@@ -212,15 +211,6 @@ margin: 0 auto;
 
  }
    
- .our_team .person_card h3{
-   
-    font-weight: 700;
-    font-size:24px;
-    margin-top: 30px;
-    color: #2D3033; 
-
-
- }
      
  .our_team .person_card span{
    
@@ -272,18 +262,18 @@ margin-top: 38px;
     vertical-align: top;
    }
    .carousel-item_color .carousel_img img {
-    width: 741px;
+    /* width: 741px; */
     height: 100%;
     display: inline-block;
    }
    .carousel-item_color .carousel_text {
-    width: 763px;
+    max-width: 763px;
     height: 100%;
 display: inline-block;
 vertical-align: top;
    }
    .carousel-item_color .carousel_text blockquote {
-  width: 400px;
+ max-width: 400px;
    height: 230px;
 font-family: "Cardo";
 font-style: italic;
@@ -302,10 +292,7 @@ margin: 116px 0 0 129px ;
 text-transform: uppercase;
      }
   
-.testimonials{
-  width: 100%;
-  height: 452px;
-}
+
 .carousel-indicators {
 bottom: -60px;
  
@@ -322,31 +309,38 @@ border: 1px solid #7E5D6F;
  background-color: #5C3249;
 }
 
-.testimonials h2{
+.download{
+ 
+  min-height: 452px;
+  display: block;
+}
+
+.download .container h2{
 margin-top: 159px;
 font-weight: 500;
 font-size:30px;
   text-align: center;
 }
-.testimonials p{
+.download .container p{
   margin-top: 5px;
   font-weight: 700;
   font-size:18px;
     text-align: center;
   }
 
-  .testimonials .banner_but{
+  .download .container .banner_but{
     margin-top: 50px;
     font-weight: 700;
     font-size:18px;
       text-align: center;
+    text-transform: uppercase;
     }
     .footer{
       width: 100%;
       background-color:  #353C65;
     }
     .footer .container .footer_box{
-      width: 100%;
+      max-width: 1170px;
       min-height: 251px;
       display:flex;
       justify-content:space-between;
@@ -406,6 +400,7 @@ font-size:30px;
      
      @media screen and (max-width:1024px) and (min-width:321px)  {
 
+
       .list{
        min-width: 566px;
        }
@@ -449,7 +444,142 @@ font-size:30px;
            .features_box p{
             font-size: 14px;
             margin-top: 4px;
-           }
-            
-
+           }  
+           .our_team{
+            min-height: 677px;
+           padding: 0 20px 0 20px;
+           
+        
+        }
+        .our_team .person_card{
+            margin-top: 78px;
+            width: 227px;
+            height: 520px;
+            margin: 114 15px 0 15px;
+        
+        }
+        
+        .our_team .person_card img{
+           width: 227px;
+           height: 227px;
+        }
+        
+        .our_team .person_card h3{
+            font-size:18px;
+            margin-top: 25px;
+         }
+             
+         .our_team .person_card span{
+            font-size:14px;
+         }
+         .our_team .person_card p{
+          font-size:14px;
+          margin-top: 22px;
+         }
+        
+         .our_team .person_card .icon{
+           width: 100%;
+           height: 40px;
+        
+        margin-top: 38px;
+         }
+         .our_team .person_card .icon img{
+            width: 33px;
+            height:33px;
+         
           }
+
+
+          .testimonials{
+          width: 100%;
+          min-height: 332px;
+          }
+          .footer .container .footer_box{
+          
+           max-width: 984px;
+           
+          }
+          .footer .container .footer_box{
+            min-height: 169px;
+            padding: 0;
+          
+          }
+
+   
+          .footer .location,.social, .about  {
+           max-width: 315px;
+            height: 80px;
+           margin-top: 46px;
+         
+          }
+   .footer .location h3,.social h3, .about h3  {
+    font-size: 14px;
+      }
+          
+ .footer .location  p, .about  p  {
+      font-size: 14px;
+      margin-top:15px ;
+              }
+  .footer .social .icon img  {
+        width: 33px;
+        height: 33px;
+        }
+
+        .footer .copyright  {
+          height: 61px;
+          width: 100%;
+          font-size: 14px;
+          }
+      
+          .footer .copyright p  {
+            margin: 0 auto;
+            height: 32px;
+            width: 314px;
+           margin-top: 24px;
+            }
+
+    .testimonials{
+     width: 100%;
+     height: 366px;
+            }
+             
+            
+    .carousel-item_color {
+     width: 100%;
+    height: 332px;
+    background-color: #5C3249;
+   }
+    .carousel-item_color .carousel_img {
+     width: 502px;
+     height: 100%;
+             }
+      
+    .carousel-item_color .carousel_text {
+      max-width: 521px;
+             }
+  .carousel-item_color .carousel_text blockquote {
+  max-width: 400px;
+  height: 230px;
+  font-size:24px;
+  margin: 47px 0 0 88px ;
+ }
+ .testimonials h2{
+ margin-top: 159px;
+ }
+.testimonials p{
+font-size:12px;
+ }
+
+ .download .container h2{
+  margin-top: 159px;
+  font-size:24px;
+  }
+  .download .container p{
+    margin-top: 5px;
+    font-size:14px;
+    }
+    .download .container .banner_but{
+      margin-top: 50px;
+      }
+                       
+  }
