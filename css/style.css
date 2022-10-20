@@ -105,6 +105,7 @@ max-width: 100%;
 padding:116px 170px;
 padding-bottom: 133px;
 display: flex;
+align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -179,7 +180,6 @@ align-items: center;
 
 }
   
-  
 .our_team{
     width: 100%;
     display: flex;
@@ -187,34 +187,23 @@ align-items: center;
    flex-wrap: wrap;
    padding: 114px 170px 78px 170px;
    
-
 }
-
 .our_team .person_card{
     max-width: 270px;
     min-height: 619px;
 
-
 }
-
-   
 .our_team .person_card img{
   width: 100%;
    display: block;
    margin: 0 auto;
-
 }
-
 .our_team .person_card h3{
-   
     font-weight: 700;
     font-size:24px;
     margin-top: 30px;
     color: #2D3033; 
-
- }
-   
-     
+ } 
  .our_team .person_card span{
    
     font-weight: 400;
@@ -222,7 +211,6 @@ align-items: center;
     margin-top: 5px;
     color: #FF4343; 
 text-transform: uppercase;
-
  }
  .our_team .person_card p{
    
@@ -230,10 +218,7 @@ text-transform: uppercase;
     font-size:18px;
     margin-top: 18px;
     color: #6C7279
-
-
  }
-
  .our_team .person_card .icon{
    width: 100%;
    height: 40px;
@@ -244,35 +229,34 @@ margin-bottom: 0;
     width: 39px;
     height:39px;
  display:inline-block
- 
   }
-
   .testimonials{
     width: 100%;
-  height: 535px;
+  max-height: 535px;
   }
-   
-
  .carousel-item_color {
-    width: 100vw;
+    width: 100%;
    max-height:490px ;
-    
   background-color: #5C3249;
+  display: flex;
+
   }
   .carousel-item_color .carousel_img {
-    width: 49vw;
-    display: inline-block;
-    vertical-align: top;
-   }
+    max-width: 741px;
+    max-height: 100%;
+ 
+    }
+
    .carousel-item_color .carousel_img img {
-    width: 100vw;
-    display: inline-block;
+   max-width: 100%;
+   max-height: 100%;
+
    }
    .carousel-item_color .carousel_text {
-    max-width: 50vw;
+    /* margin: 116px auto; */
     padding: 116px 0 0 129px;
-display: inline-block;
-vertical-align: top;
+    max-width: 770px;
+
    }
    .carousel-item_color .carousel_text blockquote {
  max-width: 400px;
@@ -281,19 +265,15 @@ font-style: italic;
 font-weight: 400;
 font-size:36px;
 color: #FFFFFF;
-display: inline-block;
-
    }
-
    .carousel-item_color .carousel_text p{
    font-weight: 700;
   font-size:13px;
   color: #FFFFFF;
-text-transform: uppercase;
-
+  text-transform: uppercase;
      }
 .carousel-indicators {
-bottom: -60px;
+  bottom: -60px;
   }
   .carousel-indicators .but_style {
     margin: 0 25px;
@@ -308,7 +288,6 @@ border: 1px solid #7E5D6F;
 }
 
 .download{
- 
   min-height: 452px;
   display: block;
 }
@@ -334,7 +313,7 @@ font-size:30px;
     text-transform: uppercase;
     }
     .footer{
-      width: 100%;
+      max-width: 100%;
       background-color:  #353C65;
     }
     .footer .container .footer_box{
@@ -348,22 +327,19 @@ font-size:30px;
     }
     
     .footer .location,.social, .about  {
-      width: 370px;
-      height: 113px;
+      max-width: 370px;
+      min-height: 113px;
       margin-top: 71px;
       color: #ffff;
    
     }
-
     .footer .location h3,.social h3, .about h3  {
-    
     text-align: center;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     }
-
     .footer .location  p, .about  p  {
       text-align: center;
      font-size: 18px;
@@ -376,7 +352,6 @@ font-size:30px;
       display: flex;
       justify-content: space-between;
     }
-
     .footer .copyright  {
     height: 90px;
     width: 100%;
@@ -385,7 +360,6 @@ font-size:30px;
     font-weight: 400;
     color: #808080;
     }
-
     .footer .copyright p  {
       margin: 0 auto;
       height: 42px;
@@ -395,13 +369,12 @@ font-size:30px;
       .footer .copyright p span  {
       color: #FFFFFF;
         }
-     
         @media screen and (max-width:1424px)   {
           .our_team{
            padding: 94px 50px 58px 50px;
         }
         .our_team .person_card{
-            max-width: 230px;
+            max-width: 225px;
         }
         .our_team .person_card h3{
             font-size:22px; 
@@ -416,33 +389,52 @@ font-size:30px;
          }
         }
         @media screen and (max-width:1256px)   {
-
-
-          /* .features{
+          .features{
             max-width: 100%;
-            padding:116px calc(100vw-1170);
-            padding-bottom: 133px;
-       
+            padding:116px 110px;
             }
-             */
-          .carousel-item_color .carousel_text {
-            padding: 70px 0 0 140px;
-            max-width: 50%;
-                   }
+
         .carousel-item_color .carousel_text blockquote {
         max-width: 330px;
         min-height: 156px;
-        font-size:30px;
-       }
+        font-size:28px;
 
-       
+      }
 
+      .footer .location,.social, .about  {
+        max-width: 330px;
+        min-height: 113px;
+        color: #ffff;
+     
+      }
+      .footer .location h3,.social h3, .about h3  {
+      font-size: 16px;
+
+      }
+      .footer .location  p, .about  p  {
+       font-size: 16px;
+        }
+
+      .footer .copyright  {
+      width: 100%;
+      font-size: 16px;
+    
+      }
+      .footer .copyright p  {
+        margin: 0 auto;
+        height: 42px;
+        width: 370px;
+        padding-top: 24px;
         }
 
 
 
-     @media screen and (max-width:1024px)   {
 
+       }
+        
+
+
+     @media screen and (max-width:1024px)   {
 
       .list{
        min-width: 566px;
@@ -532,11 +524,6 @@ font-size:30px;
          
           }
 
-
-          .testimonials{
-          width: 100%;
-          min-height: 332px;
-          }
           .footer .container .footer_box{
           
            max-width: 984px;
@@ -551,7 +538,7 @@ font-size:30px;
    
           .footer .location,.social, .about  {
            max-width: 315px;
-            height: 80px;
+            min-height: 80px;
            margin-top: 46px;
          
           }
@@ -569,8 +556,8 @@ font-size:30px;
         }
 
         .footer .copyright  {
-          height: 61px;
-          width: 100%;
+          min-height: 61px;
+          max-width: 100%;
           font-size: 14px;
           }
       
@@ -582,30 +569,27 @@ font-size:30px;
             }
 
     .testimonials{
-     width: 100%;
-     /* height: 366px; */
+      max-width: 100%;
+     /* max-height: 366px; */
             }
-      
-    .carousel-item_color {
-    height: 332px;
-   }
-    .carousel-item_color .carousel_img {
-     min-width: 49%;
-     /* height: 100%; */
-             }
-      
+  .carousel-item_color {
+    max-height:332px ;
+  
+            }
+ .carousel-item_color .carousel_img {
+  max-width: 502px;     
+  }
+
     .carousel-item_color .carousel_text {
       padding: 47px 0 0 88px;
-      max-width: 50%;
+
              }
   .carousel-item_color .carousel_text blockquote {
   max-width: 330px;
   min-height: 156px;
   font-size:24px;
  }
- .testimonials h2{
- margin-top: 159px;
- }
+
 .testimonials p{
 line-height: 32.5px;
 font-size:12px;
@@ -623,13 +607,5 @@ font-size:12px;
       margin-top: 50px;
       }
        
-      
-      .work {
-        display: grid;
-        grid-template-columns: repeat(auto-fill,auto);
-        /* grid-template-rows: 1fr 1fr; */
-        grid-column-gap: 1px;
-        
-       }
     
   }
