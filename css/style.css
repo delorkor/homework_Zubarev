@@ -632,3 +632,16 @@ padding: 19px 90px;
      align-items: center;
     }
   }
+
+
+  @media screen and (max-width:980px){
+
+    .work {
+      max-height: 678px;
+      grid-template-columns: repeat(2,minmax(auto,376px));
+      grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+      
+     }
+
+  }
