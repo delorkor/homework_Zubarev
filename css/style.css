@@ -760,6 +760,7 @@ padding: 19px 90px;
 
           }
           .but_menu:hover~ .navi{
+            transition: 1.0s all;
             transform: translateY(-1600px)
             /* display: none; */
           }
