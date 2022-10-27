@@ -733,7 +733,10 @@ padding: 19px 90px;
      
           
         }
-
+        
+        .header .logo img{
+      height: 63px;
+        }
         .but_menu{
           width: 34px;
           height: 16px;
