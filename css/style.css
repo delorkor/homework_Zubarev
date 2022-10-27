@@ -16,7 +16,9 @@
   display: block;
   margin: 0 auto;
 }
-
+#check__menu{
+  display: none;
+}
 .section_img {
   background-image: url("../img/bg.png");
   background-size: cover;
@@ -825,6 +827,10 @@
     right: 35px;
     cursor: pointer;
   }
+  .but_menu label{
+
+    cursor: pointer;
+  }
 
   .header .navi {
     background-image: url(../img/bg_menu.png);
@@ -837,16 +843,16 @@
     padding: 0;
     position: absolute;
     top: 0;
-    /* transform: translateY(-1600px) */
-
-  }
-
-  .but_menu:hover~.navi {
-    transition: 1.0s all;
     transform: translateY(-1600px)
-      /* display: none; */
+
   }
 
+  #check__menu:checked~.navi {
+    transition: 2.0s all;
+
+    transform: none
+   
+  }
   .header .navi .list {
     display: flex;
     flex-direction: column;
