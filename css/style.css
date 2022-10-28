@@ -456,21 +456,8 @@
 
 @media screen and (max-width:1457px) {
 
-  /* .features{
-
-            padding:116px 40px;
-            padding-bottom: 133px;
-
-            }
-            
-            .features_box{
-             max-width: 350px;
-            
-            } */
-
-
   .our_team {
-    padding: 94px 80px 58px 80px;
+    padding: 94px 70px 58px 70px;
   }
 
   .our_team .person_card {
@@ -499,7 +486,7 @@
   .carousel-item_color .carousel_text blockquote {
     max-width: 330px;
     min-height: 156px;
-    font-size: 28px;
+    font-size: 25px;
 
   }
 
@@ -536,10 +523,12 @@
     width: 370px;
     padding-top: 24px;
   }
-
+  .carousel-item_color .carousel_text  {
+ padding: 20px 0 0 30px;
+  }
 }
 
-@media screen and (max-width:1024px) and (min-width:815px) {
+@media screen and (max-width:1024px) and (min-width:981px) {
 
   .list {
     min-width: 566px;
@@ -712,18 +701,13 @@
   }
 
   .testimonials p {
+  
     line-height: 32.5px;
     font-size: 12px;
   }
+  .carousel-item_color .carousel_text  {
+    padding: 30px 0 0 60px;
 
-  .download .container h2 {
-    margin-top: 159px;
-    font-size: 24px;
-  }
-
-  .download .container p {
-    margin-top: 5px;
-    font-size: 14px;
   }
 
   .download .container .banner_but {
@@ -746,6 +730,9 @@
   }
 
 
+}
+.carousel-item_color .carousel_text {
+  font-size: 24px ;
 }
 
 @media screen and (max-width:850px) {
@@ -843,7 +830,8 @@
     padding: 0;
     position: absolute;
     top: 0;
-    transform: translateY(-1600px)
+    transform: translateY(-1600px);
+    transition: 2.0s all;
 
   }
 
@@ -985,7 +973,7 @@
   }
 
   .carousel-item_color {
-    padding: 0;
+      padding: 0;
   }
 
   .carousel-item_color .carousel_img {
