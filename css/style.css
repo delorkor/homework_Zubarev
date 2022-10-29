@@ -4,12 +4,12 @@
   box-sizing: border-box;
 }
 
-.main {
+/* .main {
   box-sizing: border-box;
   max-width: 1510px;
   margin: 0 auto;
   font-family: "Raleway";
-}
+} */
 
 .container {
   max-width: 1170px;
@@ -27,6 +27,8 @@
   /* min-height: 747px; */
   padding-bottom: 120px;
   color: #FFFFFF;
+  margin: 0 auto;
+  font-family: "Raleway";
 }
 
 .but_menu {
@@ -88,8 +90,10 @@
 }
 
 .banner {
-  margin: 0 auto;
+  max-width: 1170px;
   text-align: center;
+  margin: 0 auto;
+  font-family: "Raleway";
 }
 
 .banner h1 {
@@ -135,7 +139,7 @@
 }
 
 .features {
-  max-width: 100%;
+  max-width: 1170px;
   min-height: 950px;
   padding: 116px 170px;
   padding-bottom: 133px;
@@ -143,6 +147,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .features_box {
@@ -179,6 +184,7 @@
 }
 
 .work {
+  max-width: 1510px;
   /* max-height: 678px; */
   display: grid;
   grid-template-columns: repeat(4, minmax(auto, 376px));
@@ -286,12 +292,14 @@
 }
 
 .testimonials {
-  width: 100%;
+  /* max-width: 1510px; */
   max-height: 535px;
+  margin: 0 auto;
 }
 
 .carousel-item_color {
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1510px;
   max-height: 490px;
   background-color: #5C3249;
   display: flex;
@@ -355,6 +363,8 @@
 }
 
 .download {
+  max-width: 1170px;
+  margin: 0 auto;
   min-height: 452px;
   display: block;
 }
@@ -383,12 +393,11 @@
 }
 
 .footer {
-  max-width: 100%;
+  margin: 0 auto;
   background-color: #353C65;
 }
 
-.footer .container .footer_box {
-  max-width: 1170px;
+.footer .container .footer_box { 
   min-height: 251px;
   display: flex;
   justify-content: space-between;
