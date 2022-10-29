@@ -720,6 +720,11 @@
     padding: 19px 90px;
   }
 
+  .list li {
+    
+    width: 110px;
+  
+  }
   .our_team {
     padding: 0 170px 0 170px;
   }
@@ -736,7 +741,17 @@
 }
 
 @media screen and (max-width:850px) {
+  .list li {
+    width: 114px;
+  }
+  .header .logo img {
+    width: 220px;
+  }
+  .header .list{
 
+    padding: 0;
+  }
+  
 
   .work {
     min-height: 1400px;
