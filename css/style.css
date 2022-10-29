@@ -184,6 +184,7 @@
 }
 
 .work {
+  margin: 0 auto;
   max-width: 1510px;
   /* max-height: 678px; */
   display: grid;
@@ -763,6 +764,7 @@
   
 
   .work {
+    margin: 0 auto;
     min-height: 1400px;
     grid-template-columns: repeat(2, minmax(auto, 376px));
     grid-template-rows: repeat(3, 1fr);
