@@ -821,19 +821,33 @@
   }
   .but_menu {
     width: 34px;
-    height: 16px;
+    height: 20px;
     display: inline-block;
     z-index: 100;
     position: absolute;
-    top: 5px;
+    top: 19px;
     right: 35px;
     cursor: pointer;
+   
   }
   .but_menu label{
-
+width: 100%;
+height: 100%;
     cursor: pointer;
   }
-
+  .burger_line{
+    width: 34px;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    transition: .5s all;
+  }
+.second, .third{
+  top: 7px;
+}
+.fourth{
+  top: 14px;
+}
   .header .navi {
     background-image: url(../img/bg_menu.png);
     background-position: center;
@@ -852,10 +866,22 @@
 
   #check__menu:checked~.navi {
     transition: 2.0s all;
-
     transform: none
    
   }
+  #check__menu:checked~.but_menu .first {
+   display: none;
+  }
+  #check__menu:checked~.but_menu .fourth {
+    display: none;
+   }
+   #check__menu:checked~.but_menu .second {
+  transform: rotate(45deg);
+  }
+  #check__menu:checked~.but_menu .third{
+    transform: rotate(-45deg);
+  }
+
   .header .navi .list {
     display: flex;
     flex-direction: column;
@@ -1008,6 +1034,7 @@
     max-width: 100%;
     max-height: 326px;
     line-height: 32px;
+    padding: 0 20px;
 
   }
 
@@ -1090,7 +1117,7 @@
   .social,
   .about {
     min-width: 280px;
-    max-height: 103px;
+    min-height: 103px;
   }
 
   .footer .location {
