@@ -234,11 +234,13 @@
 }
 
 .our_team {
-  width: 100%;
+  max-width: 1510px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 114px 170px 78px 170px;
+
 
 }
 
